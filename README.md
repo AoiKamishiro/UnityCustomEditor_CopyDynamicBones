@@ -13,10 +13,4 @@
 <H3>連絡先</H3>
 <a>Twitter : @aoi3192</a>
 <br/>
-<<<<<<< HEAD
 <a>VRC : 神城 葵[Aoi_JPN]</a>
-=======
-<a>VRC : 神城 葵[Aoi_JPN]</a>
-
-
->>>>>>> 7f688bd82debc3eebd5c734f6563f057f23eb144
