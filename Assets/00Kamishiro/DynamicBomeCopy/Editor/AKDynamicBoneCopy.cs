@@ -1,26 +1,25 @@
 ﻿/*
  *  MIT License
-
-Copyright (c) 2020 AoiKamishiro
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
+ * 
+ * Copyright (c) 2020 AoiKamishiro
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
  *     
  */
 
@@ -65,7 +64,6 @@ public class AKDynamicBoneCopy : EditorWindow
     private Vector2 scrollPosition1 = Vector2.zero;
     private Vector2 scrollPosition2 = Vector2.zero;
     private int count = 0;
-    private bool fold = false;
 
     private void OnGUI()
     {
@@ -202,6 +200,7 @@ public class AKDynamicBoneCopy : EditorWindow
                                 {
                                     DynamicBone db = targetTR_DB_GO[i].gameObject.AddComponent<DynamicBone>();
                                     //db.m_Colliders = sourceDB[i].m_Colliders;
+                                    //db.m_Exclusions = sourceDB[i].m_Exclusions;
                                     db.m_Damping = sourceDB[i].m_Damping;
                                     db.m_DampingDistrib = sourceDB[i].m_DampingDistrib;
                                     db.m_DistanceToObject = sourceDB[i].m_DistanceToObject;
@@ -210,7 +209,6 @@ public class AKDynamicBoneCopy : EditorWindow
                                     db.m_ElasticityDistrib = sourceDB[i].m_ElasticityDistrib;
                                     db.m_EndLength = sourceDB[i].m_EndLength;
                                     db.m_EndOffset = sourceDB[i].m_EndOffset;
-                                    //db.m_Exclusions = sourceDB[i].m_Exclusions;
                                     db.m_Force = sourceDB[i].m_Force;
                                     db.m_FreezeAxis = sourceDB[i].m_FreezeAxis;
                                     db.m_Friction = sourceDB[i].m_Friction;
