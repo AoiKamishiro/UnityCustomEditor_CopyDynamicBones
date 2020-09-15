@@ -111,7 +111,7 @@ public class AKDynamicBoneCopy : EditorWindow
                         for (int i = 0; i < sourceDB.Length; i++)
                         {
                             targetTR_DB_GO[i] = FindChild(target, sourceDB[i].name);
-                            targetTR_DB_RB[i] = FindChild(target, sourceDB[i].m_Root.name);
+                            targetTR_DB_RB[i] = FindChild(target, sourceDB[i].m_Root == null ? "Null" : sourceDB[i].m_Root.name);
                         }
                         for (int i = 0; i < sourceDBC.Length; i++)
                         {
@@ -180,7 +180,7 @@ public class AKDynamicBoneCopy : EditorWindow
                                     EditorGUILayout.ObjectField(sourceDB[i].transform, typeof(Transform), true);
                                     EditorGUI.indentLevel--;
                                     EditorGUI.indentLevel--;
-                                    EditorGUILayout.ObjectField(sourceDB[i].m_Root.transform, typeof(Transform), true);
+                                    EditorGUILayout.ObjectField(sourceDB[i].m_Root == null ? null : sourceDB[i].m_Root.transform, typeof(Transform), true);
                                     EditorGUI.indentLevel++;
                                     targetTR_DB_GO[i] = (Transform)EditorGUILayout.ObjectField(targetTR_DB_GO[i] == null ? null : targetTR_DB_GO[i].transform, typeof(Transform), true);
                                     EditorGUI.indentLevel--;
