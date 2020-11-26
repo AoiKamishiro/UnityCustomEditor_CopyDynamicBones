@@ -1,4 +1,4 @@
-# UnityCustomEditor_DynamicBoneCopy
+# UnityCustomEditor_CopyDynamicBones
 ## [最新版のダウンロードはこちら](https://github.com/AoiKamishiro/UnityCustomEditor_CopyDynamicBones/releases)
 ### ※更新の際は以前のバージョンを削除してからインポートしてください。
 ### 前提アセット
